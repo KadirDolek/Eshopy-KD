@@ -1,0 +1,18 @@
+.dropdown-menu li a{
+    color: white;
+}
+.nav-link{
+    color:white;
+    
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+}
+
+#panier{
+    background: transparent;
+    border: none;
+    color: crimson;
+}
