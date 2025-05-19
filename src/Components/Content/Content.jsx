@@ -3,9 +3,8 @@ import './Content.css'
 
 
 
-export default function Content({propriete}) {
 
-    
+export default function Content({propriete, onAddToPanier }) {
 
     return(
         <>
@@ -18,9 +17,13 @@ export default function Content({propriete}) {
                     </p>
                     <p>{propriete.prix}€</p>
                     <p>Stock:{propriete.stock}</p> <hr />
-                    <a href="#" className="btn btn-primary">
-                        Acheter
-                    </a> 
+                    <button 
+                        onClick={onAddToPanier}
+                        disabled={propriete.stock === 0}
+                        className="btn btn-primary"
+                    >
+                        {propriete.stock > 0 ? 'Ajouter au panier' : 'Rupture de stock'}
+                    </button>
                 </div>
             </div>
         </>

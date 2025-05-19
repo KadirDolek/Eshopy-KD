@@ -10,9 +10,32 @@
 }
 #contentPanier{
     width:80vw;
-    height: 40vh;
+    height: auto;
     border:solid 7px rgba(172, 61, 61, 0.6);
     display: flex;
     justify-self: center;
     border-radius: 25px;
+}
+
+#contentPanier {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#contentPanier .card {
+    margin: 10px;
+}
+
+#contentPanier .card img {
+    max-height: 200px;
+    object-fit: contain;
+    display: flex;
+}
+
+#delete{
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
 }

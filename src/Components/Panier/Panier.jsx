@@ -1,13 +1,23 @@
 import './Panier.css'
 
-export default function Panier (){
-
-
-
+export default function Panier ({ panier, monPorteMonnaie }) {
     return(
-        <div id='last' style={{textAlign:'center'}}>
-            <div id='textPanier'>Mon panier :</div>
-            <div id='contentPanier'></div>
+        <div id='last'>
+            <h3 style={{display:'flex', justifyContent:'center', textAlign:'center'}}  id='textPanier'>Porte-monnaie actuel : {monPorteMonnaie}€</h3>
+            <div style={{display:'flex', justifyContent:'center'}} id='textPanier'>Mon Panier</div>
+                    <div style={{textAlign:'center'}} id='contentPanier'>
+                        {panier && panier.map((item) => (
+                            <div key={item.id} className="card" style={{ width: "16rem" }}>
+                        <img src={item.image} className="card-img-top" alt={item.title} />
+                        <div className="card-body">
+                            <h5 className="card-title">{item.title}</h5>
+                            <p>{item.prix} €</p>
+                            <p>Quantité: {item.quantity}</p>
+                            <button id='delete'>Supprimer?</button>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
