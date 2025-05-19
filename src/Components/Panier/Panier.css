@@ -1,0 +1,18 @@
+#last{
+    height: 40vh;
+    margin-top: 7%;
+}
+
+#textPanier{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 3%;
+}
+#contentPanier{
+    width:80vw;
+    height: 40vh;
+    border:solid 7px rgba(172, 61, 61, 0.6);
+    display: flex;
+    justify-self: center;
+    border-radius: 25px;
+}

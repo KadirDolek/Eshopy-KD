@@ -9,6 +9,7 @@
 .navbar-nav{
     display: flex;
     justify-content: center;
+    padding-left: 8%;
 }
 
 #panier{
