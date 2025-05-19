@@ -38,6 +38,7 @@ function App() {
           }
         ]);
       }
+
       setTotal(prevTotal => prevTotal - productToAdd.prix);
     }
   };
@@ -54,7 +55,8 @@ function App() {
           />
         ))}
       </div>
-      <Panier panier={panier} monPorteMonnaie={total} />
+      <Panier panier={panier} monPorteMonnaie={total} onDelete={(id) => setPanier(panier => panier.filter(item => item.id !== id))}
+      />
     </>
   )
 }

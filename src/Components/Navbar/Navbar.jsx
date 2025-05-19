@@ -28,7 +28,7 @@ export default function Navbar() {
               <a className="nav-link" aria-current="page" href="#">Accueil</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#articles">Nos articles</a>
+              <a className="nav-link" href="#textPanier">Mon panier</a>
             </li>
           </ul>
             <span style={{color:'white'}} className='d-flex'>
