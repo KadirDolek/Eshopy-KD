@@ -2,7 +2,7 @@
   {
     "index": 1,
     "title": "Parfum Jojo",
-    "image": "/images/Parfum1.jpg",
+    "image": "images/Parfum1.jpg",
     "prix": 25,
     "description": "Un parfum floral et fruité",
     "stock": 3
@@ -10,7 +10,7 @@
   {
     "index": 2,
     "title": "Parfum Oklm",
-    "image": "/images/Parfum2.jpg",
+    "image": "images/Parfum2.jpg",
     "prix": 40,
     "description": "Un parfum smokey/vanille",
     "stock": 8
@@ -18,7 +18,7 @@
   {
     "index": 3,
     "title": "Parfum Chacal",
-    "image": "/images/Parfum3.jpg",
+    "image": "images/Parfum3.jpg",
     "prix": 60,
     "description": "Un parfum cuir et bergamote",
     "stock": 11
